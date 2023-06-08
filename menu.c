@@ -6,8 +6,6 @@
 
 void mainMenu(){
 
-    printf("Ultimate String tool 9000, made by Andrei Manu\n\n");
-
     printf("What operation would you like to do? (Please write the number)\n\n");
     printf("1. Create a new string\n"
            "2. View your strings\n"
@@ -27,7 +25,7 @@ void mainMenu(){
             menu_2();
             break;
         case 3:
-            //create function
+            menu_3();
             break;
         case 4:
             //create function

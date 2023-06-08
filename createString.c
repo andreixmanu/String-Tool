@@ -9,9 +9,11 @@
 void menu_1(){
 
     printf("\nPlease write the string:\n");
+
     char temp[100];
     scanf("%s", temp);
-    printf("\nThe string you wrote is %s, is it correct? (Y/N)\n", temp);
+
+    printf("\nThe string you wrote is %s, correct? (Y/N)\n", temp);
 
     char option;
     scanf(" %c", &option);
@@ -35,9 +37,11 @@ void pasteString(char *string){
         perror("Error while opening file\n");
         return;
     } else {
-        printf("Now pasting string %s\n", string);
+        printf("Now pasting string %s.\n", string);
         fprintf(file, "\n%s", string);
     }
-    printf("Paste successfull, now closing file.\n");
+    printf("Paste successful.\n");
     fclose(file);
+
+    return_to_menu();
 }

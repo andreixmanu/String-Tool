@@ -43,13 +43,5 @@ void menu_2(){
     fclose(file);
     free(buffer);
 
-    printf("Do you want to do anything else? (Y/N)\n");
-    char option;
-    scanf(" %c", option);
-    if(option == 'Y' || option == 'y')
-        mainMenu();
-    else{
-        printf("Thank you for using the Ultimate String Tool 9000\n");
-        return;
-    }
+    return_to_menu();
 }
