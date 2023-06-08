@@ -30,7 +30,7 @@ void menu_1(){
 }
 
 void pasteString(char *string){
-    FILE *file = fopen("strings.txt", "a");
+    FILE *file = fopen("./strings.txt", "a");
     if(file == NULL){
         perror("Error while opening file\n");
         return;
