@@ -32,13 +32,13 @@ void menu_1(){
 }
 
 void pasteString(char *string){
-    FILE *file = fopen("./strings.txt", "a");
+    FILE *file = fopen("./strings.txt", "a+");
     if(file == NULL){
         perror("Error while opening file\n");
         return;
     } else {
         printf("Now pasting string %s.\n", string);
-        fprintf(file, "\n%s", string);
+        fprintf(file, "%llu: %s\n", line_counter(file), string);
     }
     printf("Paste successful.\n");
     fclose(file);

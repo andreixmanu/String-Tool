@@ -1,9 +1,13 @@
 //
 // Created by manua on 07/06/2023.
 //
+
+#include <stdio.h>
+
 void mainMenu();
 void return_to_menu();
 void saveString(int choice, char *string);
+unsigned long long line_counter(FILE *file);
 
 //create string
 void menu_1();
