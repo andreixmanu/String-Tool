@@ -7,5 +7,6 @@ void swap(char* a, char* b);
 void reverseStringRecursive(char* str, int start, int end);
 
 void menu_1();
-void createString(const char *string);
 void pasteString(char *string);
+
+void menu_2();

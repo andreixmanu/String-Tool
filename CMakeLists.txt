@@ -5,4 +5,4 @@ set(CMAKE_C_STANDARD 11)
 
 include_directories(.)
 
-add_executable(main.c main.c createString.c)
+add_executable(main.c main.c createString.c reverseString.c viewStrings.c)

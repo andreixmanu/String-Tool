@@ -18,13 +18,13 @@ void mainMenu(){
 
     int option;
     scanf("%d", &option);
-    printf("Your choice is %d", option);
+    //printf("Your choice is %d", option);
     switch(option){
         case 1:
             menu_1();
             break;
         case 2:
-            //create function
+            menu_2();
             break;
         case 3:
             //create function

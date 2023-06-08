@@ -36,7 +36,7 @@ void pasteString(char *string){
         return;
     } else {
         printf("Now pasting string %s\n", string);
-        fprintf(file, "%s", string);
+        fprintf(file, "\n%s", string);
     }
     printf("Paste successfull, now closing file.\n");
     fclose(file);
