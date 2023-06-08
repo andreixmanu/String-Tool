@@ -3,6 +3,7 @@
 //
 void mainMenu();
 void return_to_menu();
+void saveString(int choice, char *string);
 
 //create string
 void menu_1();
@@ -16,3 +17,5 @@ void menu_3();
 void swap(char* a, char* b);
 void reverseStringRecursive(char* str, int start, unsigned long long end);
 void reverseString(char *string);
+
+void menu_4();

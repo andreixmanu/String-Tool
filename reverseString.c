@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "functions.h"
 #include "string.h"
 
@@ -21,7 +20,6 @@ void menu_3(){
         char option2;
         scanf(" %c", &option2);
 
-        unsigned long long length = strlen(temp);
         switch (option2) {
             case '1':
                 reverseString(temp);
@@ -61,8 +59,8 @@ void reverseStringRecursive(char* str, int start, unsigned long long end) {
 }
 
 void reverseString(char *string) {
-    int length = strlen(string);
-    int i = 0, j = length - 1;
+    unsigned long long length = strlen(string);
+    unsigned long long i = 0, j = length - 1;
 
     while (i < j) {
         char temp = string[i];

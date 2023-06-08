@@ -28,7 +28,7 @@ void mainMenu(){
             menu_3();
             break;
         case 4:
-            //create function
+            menu_4();
             break;
         case 5:
             //create function
