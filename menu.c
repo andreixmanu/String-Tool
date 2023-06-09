@@ -11,8 +11,8 @@ void mainMenu(){
            "2. View your strings\n"
            "3. Reverse one of your strings\n"
            "4. Concatenate two strings\n"
-           "5. Delete a string\n"
-           "6. Check string length\n\n");
+           "5. Check string length\n"
+           "6. Reset all\n\n");
 
     int option;
     scanf("%d", &option);
@@ -31,14 +31,13 @@ void mainMenu(){
             menu_4();
             break;
         case 5:
-            //create function
+            menu_6();
             break;
         case 6:
-            //create function
-            break;
+            menu_7();
         default:
-            printf("\nU stoopid");
-            break;
+            printf("\nPlease select a valid option.\n");
+            mainMenu();
     }
 
 

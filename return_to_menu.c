@@ -7,7 +7,7 @@
 
 void return_to_menu(){
 
-    printf("\n\nDo you want to do anything else? (Y/N)\n");
+    printf("\n\nDo you want to do anything else? (y/n)\n");
 
     char selection;
     scanf(" %c", &selection);
